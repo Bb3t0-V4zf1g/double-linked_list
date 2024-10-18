@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="src/style/style.css" rel="stylesheet">
+    <script src="src/js/main.js"></script>
+</head>
+
+<body>
+<div id="layout">
+    <div id="title">
+        <h2>INVENTORY</h2>
+    </div>
+    <div id="content">
+        <form id="form">
+            <div id="input-ctn">
+                <!--PRODUCT CODE-->
+                <input type="text" id="txtCode" placeholder="Product code" required/>
+                <!--PRODUCT NAME-->
+                <input type="text" id="txtName" placeholder="Product Name" required/>
+                <!--PRODUCT QUANTITY-->
+                <input type="text" id="txtQuantity" placeholder="Product Quantity" required/>
+                <!--PRODUCT Price-->
+                <input type="text" id="txtPrice" placeholder="Product price" required/>
+            </div>
+            <div id="buttons-ctn">
+                <button type="button" id="btnAdd">Add it</button>
+                <button type="button" id="btnLookFor">Look for code</button>
+                <button type="button" id="btnDelete">Delete by its code</button>
+                <button type="button" id="btnList">List whole inventory</button>
+                <button type="button" id="btnListR">List whole inventory in reverse</button>
+                <button type="button" id="btnExtract">Extract the first product</button>
+                <button type="button" id="btnExtractLast">Extract the last product</button>
+            </div>
+        </form>
+        <div class="details"></div>
+    </div>
+
+</div>
+
+<script src="src/js/script.js"></script>
+</body>
+
+</html>
